@@ -1,0 +1,13 @@
+C:\Users\user\source\repos\InspiraDeskManager\InspiraDeskManager\bin\Debug\InspiraDeskManager.exe
+C:\Users\user\source\repos\InspiraDeskManager\InspiraDeskManager\bin\Debug\System.Data.SQLite.dll
+C:\Users\user\source\repos\InspiraDeskManager\InspiraDeskManager\bin\Debug\InspiraDeskManager.exe.config
+C:\Users\user\source\repos\InspiraDeskManager\InspiraDeskManager\bin\Debug\System.Data.SQLite.xml
+C:\Users\user\source\repos\InspiraDeskManager\InspiraDeskManager\obj\Debug\InspiraDeskManager.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\InspiraDeskManager\InspiraDeskManager\obj\Debug\InspiraQuotesManager.Forms.LoginForm.resources
+C:\Users\user\source\repos\InspiraDeskManager\InspiraDeskManager\obj\Debug\InspiraQuotesManager.Forms.MainForm.resources
+C:\Users\user\source\repos\InspiraDeskManager\InspiraDeskManager\obj\Debug\InspiraDeskManager.Properties.Resources.resources
+C:\Users\user\source\repos\InspiraDeskManager\InspiraDeskManager\obj\Debug\InspiraDeskManager.csproj.GenerateResource.cache
+C:\Users\user\source\repos\InspiraDeskManager\InspiraDeskManager\obj\Debug\InspiraDeskManager.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\InspiraDeskManager\InspiraDeskManager\obj\Debug\InspiraD.73F151C5.Up2Date
+C:\Users\user\source\repos\InspiraDeskManager\InspiraDeskManager\obj\Debug\InspiraDeskManager.exe
+C:\Users\user\source\repos\InspiraDeskManager\InspiraDeskManager\obj\Debug\InspiraDeskManager.pdb
