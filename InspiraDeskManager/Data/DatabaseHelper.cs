@@ -1,5 +1,4 @@
-﻿// Create or update: InspiraDeskManager/Data/DatabaseHelper.cs
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SQLite;
@@ -27,13 +26,14 @@ namespace InspiraQuotesManager.Data
                 {
                     connection.Open();
 
-                    // Create Quotes table
+                    // Create Quotes table with CreatedBy field
                     string createQuotesTable = @"
                     CREATE TABLE IF NOT EXISTS Quotes (
                         Id INTEGER PRIMARY KEY AUTOINCREMENT,
                         QuoteText TEXT NOT NULL,
                         Author TEXT,
-                        Category TEXT
+                        Category TEXT,
+                        CreatedBy TEXT
                     )";
 
                     // Create Users table
@@ -55,6 +55,40 @@ namespace InspiraQuotesManager.Data
                     }
                 }
             }
+            else
+            {
+                // Check if CreatedBy column exists in Quotes table, and add it if it doesn't
+                using (var connection = new SQLiteConnection(connectionString))
+                {
+                    connection.Open();
+
+                    // First check if the column exists
+                    bool columnExists = false;
+                    using (var command = new SQLiteCommand("PRAGMA table_info(Quotes)", connection))
+                    {
+                        using (var reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                if (reader["name"].ToString() == "CreatedBy")
+                                {
+                                    columnExists = true;
+                                    break;
+                                }
+                            }
+                        }
+                    }
+
+                    // If it doesn't exist, add it
+                    if (!columnExists)
+                    {
+                        using (var command = new SQLiteCommand("ALTER TABLE Quotes ADD COLUMN CreatedBy TEXT", connection))
+                        {
+                            command.ExecuteNonQuery();
+                        }
+                    }
+                }
+            }
         }
 
         #region Quote Methods
@@ -65,7 +99,7 @@ namespace InspiraQuotesManager.Data
             using (var connection = new SQLiteConnection(connectionString))
             {
                 connection.Open();
-                string query = "SELECT Id, QuoteText, Author, Category FROM Quotes";
+                string query = "SELECT Id, QuoteText, Author, Category, CreatedBy FROM Quotes";
 
                 using (var command = new SQLiteCommand(query, connection))
                 {
@@ -78,7 +112,8 @@ namespace InspiraQuotesManager.Data
                                 Id = Convert.ToInt32(reader["Id"]),
                                 QuoteText = reader["QuoteText"].ToString(),
                                 Author = reader["Author"].ToString(),
-                                Category = reader["Category"].ToString()
+                                Category = reader["Category"].ToString(),
+                                CreatedBy = reader["CreatedBy"]?.ToString() // Handle potential null values
                             });
                         }
                     }
@@ -93,13 +128,14 @@ namespace InspiraQuotesManager.Data
             using (var connection = new SQLiteConnection(connectionString))
             {
                 connection.Open();
-                string query = "INSERT INTO Quotes (QuoteText, Author, Category) VALUES (@QuoteText, @Author, @Category)";
+                string query = "INSERT INTO Quotes (QuoteText, Author, Category, CreatedBy) VALUES (@QuoteText, @Author, @Category, @CreatedBy)";
 
                 using (var command = new SQLiteCommand(query, connection))
                 {
                     command.Parameters.AddWithValue("@QuoteText", quote.QuoteText);
                     command.Parameters.AddWithValue("@Author", quote.Author);
                     command.Parameters.AddWithValue("@Category", quote.Category);
+                    command.Parameters.AddWithValue("@CreatedBy", quote.CreatedBy);
                     command.ExecuteNonQuery();
                 }
             }
@@ -110,7 +146,7 @@ namespace InspiraQuotesManager.Data
             using (var connection = new SQLiteConnection(connectionString))
             {
                 connection.Open();
-                string query = "UPDATE Quotes SET QuoteText = @QuoteText, Author = @Author, Category = @Category WHERE Id = @Id";
+                string query = "UPDATE Quotes SET QuoteText = @QuoteText, Author = @Author, Category = @Category WHERE Id = @Id AND CreatedBy = @CreatedBy";
 
                 using (var command = new SQLiteCommand(query, connection))
                 {
@@ -118,28 +154,72 @@ namespace InspiraQuotesManager.Data
                     command.Parameters.AddWithValue("@QuoteText", quote.QuoteText);
                     command.Parameters.AddWithValue("@Author", quote.Author);
                     command.Parameters.AddWithValue("@Category", quote.Category);
-                    command.ExecuteNonQuery();
+                    command.Parameters.AddWithValue("@CreatedBy", quote.CreatedBy);
+                    int rowsAffected = command.ExecuteNonQuery();
+
+                    // Return the number of rows affected so we can check if update was successful
+                    if (rowsAffected == 0)
+                    {
+                        throw new UnauthorizedAccessException("You can only edit quotes that you created.");
+                    }
                 }
             }
         }
 
-        public void DeleteQuote(int id)
+        public void DeleteQuote(int id, string username)
         {
             using (var connection = new SQLiteConnection(connectionString))
             {
                 connection.Open();
-                string query = "DELETE FROM Quotes WHERE Id = @Id";
+                string query = "DELETE FROM Quotes WHERE Id = @Id AND CreatedBy = @CreatedBy";
 
                 using (var command = new SQLiteCommand(query, connection))
                 {
                     command.Parameters.AddWithValue("@Id", id);
-                    command.ExecuteNonQuery();
+                    command.Parameters.AddWithValue("@CreatedBy", username);
+                    int rowsAffected = command.ExecuteNonQuery();
+
+                    // Check if any rows were affected
+                    if (rowsAffected == 0)
+                    {
+                        throw new UnauthorizedAccessException("You can only delete quotes that you created.");
+                    }
+                }
+            }
+        }
+
+        public Quote GetQuoteById(int id)
+        {
+            using (var connection = new SQLiteConnection(connectionString))
+            {
+                connection.Open();
+                string query = "SELECT Id, QuoteText, Author, Category, CreatedBy FROM Quotes WHERE Id = @Id";
+
+                using (var command = new SQLiteCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@Id", id);
+                    using (var reader = command.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            return new Quote
+                            {
+                                Id = Convert.ToInt32(reader["Id"]),
+                                QuoteText = reader["QuoteText"].ToString(),
+                                Author = reader["Author"].ToString(),
+                                Category = reader["Category"].ToString(),
+                                CreatedBy = reader["CreatedBy"]?.ToString()
+                            };
+                        }
+                        return null;
+                    }
                 }
             }
         }
         #endregion
 
         #region User Methods
+        // Keeping existing User methods unchanged...
         public bool UserExists(string username)
         {
             using (var connection = new SQLiteConnection(connectionString))
