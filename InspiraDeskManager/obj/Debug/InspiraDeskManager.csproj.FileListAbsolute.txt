@@ -11,3 +11,17 @@ C:\Users\user\source\repos\InspiraDeskManager\InspiraDeskManager\obj\Debug\Inspi
 C:\Users\user\source\repos\InspiraDeskManager\InspiraDeskManager\obj\Debug\InspiraD.73F151C5.Up2Date
 C:\Users\user\source\repos\InspiraDeskManager\InspiraDeskManager\obj\Debug\InspiraDeskManager.exe
 C:\Users\user\source\repos\InspiraDeskManager\InspiraDeskManager\obj\Debug\InspiraDeskManager.pdb
+C:\Users\Lenovo\Downloads\InspiraDesk\InspiraDesk\InspiraDeskManager\bin\Debug\InspiraDeskManager.exe.config
+C:\Users\Lenovo\Downloads\InspiraDesk\InspiraDesk\InspiraDeskManager\bin\Debug\InspiraDeskManager.exe
+C:\Users\Lenovo\Downloads\InspiraDesk\InspiraDesk\InspiraDeskManager\bin\Debug\InspiraDeskManager.pdb
+C:\Users\Lenovo\Downloads\InspiraDesk\InspiraDesk\InspiraDeskManager\bin\Debug\System.Data.SQLite.dll
+C:\Users\Lenovo\Downloads\InspiraDesk\InspiraDesk\InspiraDeskManager\bin\Debug\System.Data.SQLite.xml
+C:\Users\Lenovo\Downloads\InspiraDesk\InspiraDesk\InspiraDeskManager\obj\Debug\InspiraDeskManager.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Downloads\InspiraDesk\InspiraDesk\InspiraDeskManager\obj\Debug\InspiraQuotesManager.Forms.LoginForm.resources
+C:\Users\Lenovo\Downloads\InspiraDesk\InspiraDesk\InspiraDeskManager\obj\Debug\InspiraQuotesManager.Forms.MainForm.resources
+C:\Users\Lenovo\Downloads\InspiraDesk\InspiraDesk\InspiraDeskManager\obj\Debug\InspiraDeskManager.Properties.Resources.resources
+C:\Users\Lenovo\Downloads\InspiraDesk\InspiraDesk\InspiraDeskManager\obj\Debug\InspiraDeskManager.csproj.GenerateResource.cache
+C:\Users\Lenovo\Downloads\InspiraDesk\InspiraDesk\InspiraDeskManager\obj\Debug\InspiraDeskManager.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Downloads\InspiraDesk\InspiraDesk\InspiraDeskManager\obj\Debug\InspiraD.73F151C5.Up2Date
+C:\Users\Lenovo\Downloads\InspiraDesk\InspiraDesk\InspiraDeskManager\obj\Debug\InspiraDeskManager.exe
+C:\Users\Lenovo\Downloads\InspiraDesk\InspiraDesk\InspiraDeskManager\obj\Debug\InspiraDeskManager.pdb

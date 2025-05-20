@@ -1,0 +1,151 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Lenovo\\Downloads\\InspiraDesk\\InspiraDesk\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EA613CB8-C38F-42BE-8CA5-F156832AB353}|InspiraDeskManager\\InspiraDeskManager.csproj|C:\\Users\\Lenovo\\Downloads\\InspiraDesk\\InspiraDesk\\inspiradeskmanager\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA613CB8-C38F-42BE-8CA5-F156832AB353}|InspiraDeskManager\\InspiraDeskManager.csproj|solutionrelative:inspiradeskmanager\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA613CB8-C38F-42BE-8CA5-F156832AB353}|InspiraDeskManager\\InspiraDeskManager.csproj|c:\\users\\lenovo\\downloads\\inspiradesk\\inspiradesk\\inspiradeskmanager\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EA613CB8-C38F-42BE-8CA5-F156832AB353}|InspiraDeskManager\\InspiraDeskManager.csproj|solutionrelative:inspiradeskmanager\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA613CB8-C38F-42BE-8CA5-F156832AB353}|InspiraDeskManager\\InspiraDeskManager.csproj|C:\\Users\\Lenovo\\Downloads\\InspiraDesk\\InspiraDesk\\inspiradeskmanager\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA613CB8-C38F-42BE-8CA5-F156832AB353}|InspiraDeskManager\\InspiraDeskManager.csproj|solutionrelative:inspiradeskmanager\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA613CB8-C38F-42BE-8CA5-F156832AB353}|InspiraDeskManager\\InspiraDeskManager.csproj|C:\\Users\\Lenovo\\Downloads\\InspiraDesk\\InspiraDesk\\inspiradeskmanager\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EA613CB8-C38F-42BE-8CA5-F156832AB353}|InspiraDeskManager\\InspiraDeskManager.csproj|solutionrelative:inspiradeskmanager\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA613CB8-C38F-42BE-8CA5-F156832AB353}|InspiraDeskManager\\InspiraDeskManager.csproj|c:\\users\\lenovo\\downloads\\inspiradesk\\inspiradesk\\inspiradeskmanager\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA613CB8-C38F-42BE-8CA5-F156832AB353}|InspiraDeskManager\\InspiraDeskManager.csproj|solutionrelative:inspiradeskmanager\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA613CB8-C38F-42BE-8CA5-F156832AB353}|InspiraDeskManager\\InspiraDeskManager.csproj|C:\\Users\\Lenovo\\Downloads\\InspiraDesk\\InspiraDesk\\inspiradeskmanager\\data\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA613CB8-C38F-42BE-8CA5-F156832AB353}|InspiraDeskManager\\InspiraDeskManager.csproj|solutionrelative:inspiradeskmanager\\data\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA613CB8-C38F-42BE-8CA5-F156832AB353}|InspiraDeskManager\\InspiraDeskManager.csproj|C:\\Users\\Lenovo\\Downloads\\InspiraDesk\\InspiraDesk\\inspiradeskmanager\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA613CB8-C38F-42BE-8CA5-F156832AB353}|InspiraDeskManager\\InspiraDeskManager.csproj|solutionrelative:inspiradeskmanager\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA613CB8-C38F-42BE-8CA5-F156832AB353}|InspiraDeskManager\\InspiraDeskManager.csproj|C:\\Users\\Lenovo\\Downloads\\InspiraDesk\\InspiraDesk\\inspiradeskmanager\\models\\quotes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA613CB8-C38F-42BE-8CA5-F156832AB353}|InspiraDeskManager\\InspiraDeskManager.csproj|solutionrelative:inspiradeskmanager\\models\\quotes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\InspiraDesk\\InspiraDesk\\InspiraDeskManager\\MainForm.cs",
+              "RelativeDocumentMoniker": "InspiraDeskManager\\MainForm.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\InspiraDesk\\InspiraDesk\\InspiraDeskManager\\MainForm.cs [Design]",
+              "RelativeToolTip": "InspiraDeskManager\\MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T05:51:10.801Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\InspiraDesk\\InspiraDesk\\InspiraDeskManager\\MainForm.Designer.cs",
+              "RelativeDocumentMoniker": "InspiraDeskManager\\MainForm.Designer.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\InspiraDesk\\InspiraDesk\\InspiraDeskManager\\MainForm.Designer.cs",
+              "RelativeToolTip": "InspiraDeskManager\\MainForm.Designer.cs",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAUwKcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T05:35:28.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\InspiraDesk\\InspiraDesk\\InspiraDeskManager\\MainForm.cs",
+              "RelativeDocumentMoniker": "InspiraDeskManager\\MainForm.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\InspiraDesk\\InspiraDesk\\InspiraDeskManager\\MainForm.cs",
+              "RelativeToolTip": "InspiraDeskManager\\MainForm.cs",
+              "ViewState": "AgIAAH8AAAAAAAAAAAAqwJgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T05:29:35.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\InspiraDesk\\InspiraDesk\\InspiraDeskManager\\LoginForm.cs",
+              "RelativeDocumentMoniker": "InspiraDeskManager\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\InspiraDesk\\InspiraDesk\\InspiraDeskManager\\LoginForm.cs",
+              "RelativeToolTip": "InspiraDeskManager\\LoginForm.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowC0AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T05:29:06.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\InspiraDesk\\InspiraDesk\\InspiraDeskManager\\LoginForm.cs",
+              "RelativeDocumentMoniker": "InspiraDeskManager\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\InspiraDesk\\InspiraDesk\\InspiraDeskManager\\LoginForm.cs [Design]",
+              "RelativeToolTip": "InspiraDeskManager\\LoginForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T05:17:21.919Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DatabaseHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\InspiraDesk\\InspiraDesk\\InspiraDeskManager\\Data\\DatabaseHelper.cs",
+              "RelativeDocumentMoniker": "InspiraDeskManager\\Data\\DatabaseHelper.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\InspiraDesk\\InspiraDesk\\InspiraDeskManager\\Data\\DatabaseHelper.cs",
+              "RelativeToolTip": "InspiraDeskManager\\Data\\DatabaseHelper.cs",
+              "ViewState": "AgIAALsAAAAAAAAAAAAUwMsAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T05:26:43.597Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\InspiraDesk\\InspiraDesk\\InspiraDeskManager\\Models\\User.cs",
+              "RelativeDocumentMoniker": "InspiraDeskManager\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\InspiraDesk\\InspiraDesk\\InspiraDeskManager\\Models\\User.cs",
+              "RelativeToolTip": "InspiraDeskManager\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T05:26:28.832Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Quotes.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\InspiraDesk\\InspiraDesk\\InspiraDeskManager\\Models\\Quotes.cs",
+              "RelativeDocumentMoniker": "InspiraDeskManager\\Models\\Quotes.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\InspiraDesk\\InspiraDesk\\InspiraDeskManager\\Models\\Quotes.cs",
+              "RelativeToolTip": "InspiraDeskManager\\Models\\Quotes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T05:17:09.212Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

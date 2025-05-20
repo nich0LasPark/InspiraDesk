@@ -1,4 +1,5 @@
-﻿using System;
+﻿// Update: InspiraDeskManager/MainForm.cs
+using System;
 using System.Linq;
 using System.Windows.Forms;
 using InspiraQuotesManager.Data;
@@ -11,6 +12,7 @@ namespace InspiraQuotesManager.Forms
         private DatabaseHelper dbHelper = new DatabaseHelper();
         private int selectedQuoteId = -1;
         private string _username;
+        private LoginForm _loginForm;
 
         public MainForm(string username)
         {
@@ -112,6 +114,18 @@ namespace InspiraQuotesManager.Forms
             ClearInputs();
         }
 
+        private void BtnLogout_Click(object sender, EventArgs e)
+        {
+            if (_loginForm == null || _loginForm.IsDisposed)
+            {
+                _loginForm = new LoginForm();
+            }
+
+            _loginForm.Show();
+            this.Close();
+        }
+
+
         private void DgvQuotes_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
@@ -125,5 +139,15 @@ namespace InspiraQuotesManager.Forms
                     .FirstOrDefault(item => item.ToString() == row.Cells["Category"].Value.ToString());
             }
         }
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
     }
 }
