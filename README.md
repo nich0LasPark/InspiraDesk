@@ -1,8 +1,4 @@
 # InspiraDesk Quote Manager
-
-> Last updated: 2025-05-22 10:02:38 UTC  
-> Maintained by: @nich0LasPark
-
 A modern, user-friendly desktop application for managing inspirational quotes with secure multi-user access.
 
 ## Overview
