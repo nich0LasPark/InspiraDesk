@@ -1,80 +1,165 @@
-# InspiraDesk Quote Manager
-A modern, user-friendly desktop application for managing inspirational quotes with secure multi-user access.
+<div align="center">
 
-## Overview
+# 🌟 InspiraDesk Quote Manager
 
-InspiraDesk is a lightweight yet powerful Windows application built to store, organize, and manage your favorite inspirational quotes. The application features a clean, intuitive interface with a calming light blue theme, multiple user accounts, and simple quote management.
+[![License](https://img.shields.io/badge/license-Proprietary-blue.svg)](LICENSE)
+[![.NET Framework](https://img.shields.io/badge/.NET%20Framework-4.7.2-512BD4)](https://dotnet.microsoft.com/)
+[![Windows](https://img.shields.io/badge/Platform-Windows-0078D6?logo=windows)](https://www.microsoft.com/windows)
+[![SQLite](https://img.shields.io/badge/Database-SQLite-003B57?logo=sqlite)](https://www.sqlite.org/)
 
-## Features
+> *Find your daily inspiration with InspiraDesk - Your Personal Quote Management System*
 
-### User Authentication System
+[Features](#-features) • [Installation](#-installation) • [Usage](#-usage) • [Technical Details](#-technical-details) • [Team](#-team)
+
+![Dashboard Preview](https://via.placeholder.com/800x400?text=InspiraDesk+Dashboard+Preview)
+
+</div>
+
+---
+
+> **Last Updated:** 2025-05-22 10:04:49 UTC  
+> **Maintained by:** [@nich0LasPark](https://github.com/nich0LasPark)
+
+## 📋 Overview
+
+InspiraDesk is a powerful Windows desktop application designed to help you collect, organize, and manage your favorite inspirational quotes. With its intuitive interface and secure multi-user system, keeping track of your personal collection of wisdom has never been easier.
+
+## ✨ Features
+
+<details>
+<summary><b>🔐 User Authentication System</b></summary>
+
 - Secure login and registration
 - Personalized user experience
 - Password protection for user accounts
+</details>
 
-### Quote Management
+<details>
+<summary><b>📝 Quote Management</b></summary>
+
 - Add, edit, and delete inspirational quotes
-- Categorize quotes by topic (Motivation, Life, Love, Humor)
+- Categorize quotes by topic:
+  - 💪 Motivation
+  - 🌱 Life
+  - ❤️ Love
+  - 😊 Humor
 - Add author information to your quotes
 - View all quotes in an organized data grid
+</details>
 
-### Permissions System
+<details>
+<summary><b>🔒 Permissions System</b></summary>
+
 - Only edit or delete quotes that you've created
 - Visual indicators show which quotes belong to you
 - Read-only access to quotes from other users
+</details>
 
-### Modern UI
+<details>
+<summary><b>🎨 Modern UI</b></summary>
+
 - Clean, light blue aesthetic
 - Responsive and intuitive controls
 - Professional dialog messages
 - Keyboard shortcuts for improved workflow
+</details>
 
-## Getting Started
+## 🚀 Installation
 
-### Installation
-1. Extract the InspiraDesk files to your preferred location
-2. Double-click InspiraDeskManager.exe to launch the application
+1. Download the latest release from our [releases page](#)
+2. Extract the InspiraDesk files to your preferred location
+3. Double-click `InspiraDeskManager.exe` to launch the application
 
-### First-time Use
-1. Register a new account from the login screen
-2. Enter your desired username and password
-3. Click "Register" to create your account
+## 📖 Usage
 
-### Adding Quotes
-1. Enter quote text, author, and select a category
-2. Click "Add" to save your quote
-3. Your quotes will be highlighted in green for easy identification
+### First-time Setup
+
+```mermaid
+graph LR
+    A[Launch App] --> B[Register Account]
+    B --> C[Login]
+    C --> D[Start Managing Quotes]
+```
+
+1. Launch InspiraDeskManager.exe
+2. Click "Register" on the login screen
+3. Create your account:
+   - Choose a username
+   - Set a secure password
+4. Login with your new credentials
 
 ### Managing Quotes
-1. Click on any quote in the list to select it
-2. Edit the details and click "Update" to save changes
-3. Use "Delete" to remove unwanted quotes
-4. Click "Clear" to reset the input fields
 
-## Technical Details
+| Action | Description | Shortcut |
+|--------|-------------|----------|
+| Add Quote | Enter quote details and click "Add" | Ctrl+N |
+| Edit Quote | Select quote and modify details | Ctrl+E |
+| Delete Quote | Select quote and click "Delete" | Del |
+| Reset Fields | Click "Clear" to reset input fields | Ctrl+R |
 
-- Built with .NET Framework 4.7.2
-- Uses SQLite for lightweight, portable database storage
-- C# 7.3 Windows Forms application
-- No external dependencies required
+## 🛠️ Technical Details
 
-## Database Information
+### System Requirements
 
-The application uses a local SQLite database (InspiraQuotes.db) which is created in the application directory on first run. It contains two main tables:
+- **OS:** Windows 7 or later
+- **Runtime:** .NET Framework 4.7.2
+- **Memory:** 2GB RAM minimum
+- **Storage:** 100MB free space
 
-- Users: Stores user credentials
-- Quotes: Stores quote data with creator information
+### Architecture
 
-## Development Team
+```mermaid
+graph TD
+    A[User Interface] --> B[Business Logic]
+    B --> C[SQLite Database]
+    C --> D[(InspiraQuotes.db)]
+```
 
-- **Lorraine Jade D. Barral**
-- **Cathleen Mae C. Cuevas**
-- **Mikyla Denise J. Dela Rosa**
+### Database Schema
 
-## License
+#### Users Table
+```sql
+CREATE TABLE Users (
+    UserID INTEGER PRIMARY KEY,
+    Username TEXT UNIQUE,
+    PasswordHash TEXT
+);
+```
+
+#### Quotes Table
+```sql
+CREATE TABLE Quotes (
+    QuoteID INTEGER PRIMARY KEY,
+    Text TEXT,
+    Author TEXT,
+    Category TEXT,
+    CreatorID INTEGER,
+    FOREIGN KEY (CreatorID) REFERENCES Users(UserID)
+);
+```
+
+## 👥 Team
+
+<div align="center">
+
+| Member | Role |
+|--------|------|
+| **Lorraine Jade D. Barral** | Lead Developer |
+| **Cathleen Mae C. Cuevas** | UI/UX Designer |
+| **Mikyla Denise J. Dela Rosa** | Database Architect |
+
+</div>
+
+## 📄 License
 
 © 2025 InspiraDesk Team. All rights reserved.
 
 ---
 
-*InspiraDesk: Find your daily inspiration.*
+<div align="center">
+
+### 💭 InspiraDesk: Where Inspiration Meets Organization
+
+[Report Bug](https://github.com/your-repo/issues) • [Request Feature](https://github.com/your-repo/issues) • [Documentation](#)
+
+</div>
