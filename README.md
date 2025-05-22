@@ -2,7 +2,6 @@
 
 # 🌟 InspiraDesk Quote Manager
 
-[![License](https://img.shields.io/badge/license-Proprietary-blue.svg)](LICENSE)
 [![.NET Framework](https://img.shields.io/badge/.NET%20Framework-4.7.2-512BD4)](https://dotnet.microsoft.com/)
 [![Windows](https://img.shields.io/badge/Platform-Windows-0078D6?logo=windows)](https://www.microsoft.com/windows)
 [![SQLite](https://img.shields.io/badge/Database-SQLite-003B57?logo=sqlite)](https://www.sqlite.org/)
@@ -11,15 +10,7 @@
 
 [Features](#-features) • [Installation](#-installation) • [Usage](#-usage) • [Technical Details](#-technical-details) • [Team](#-team)
 
-![Dashboard Preview](https://via.placeholder.com/800x400?text=InspiraDesk+Dashboard+Preview)
-
 </div>
-
----
-
-> **Last Updated:** 2025-05-22 10:04:49 UTC  
-> **Maintained by:** [@nich0LasPark](https://github.com/nich0LasPark)
-
 ## 📋 Overview
 
 InspiraDesk is a powerful Windows desktop application designed to help you collect, organize, and manage your favorite inspirational quotes. With its intuitive interface and secure multi-user system, keeping track of your personal collection of wisdom has never been easier.
@@ -72,15 +63,6 @@ InspiraDesk is a powerful Windows desktop application designed to help you colle
 
 ## 📖 Usage
 
-### First-time Setup
-
-```mermaid
-graph LR
-    A[Launch App] --> B[Register Account]
-    B --> C[Login]
-    C --> D[Start Managing Quotes]
-```
-
 1. Launch InspiraDeskManager.exe
 2. Click "Register" on the login screen
 3. Create your account:
@@ -105,15 +87,6 @@ graph LR
 - **Runtime:** .NET Framework 4.7.2
 - **Memory:** 2GB RAM minimum
 - **Storage:** 100MB free space
-
-### Architecture
-
-```mermaid
-graph TD
-    A[User Interface] --> B[Business Logic]
-    B --> C[SQLite Database]
-    C --> D[(InspiraQuotes.db)]
-```
 
 ### Database Schema
 
@@ -142,24 +115,19 @@ CREATE TABLE Quotes (
 
 <div align="center">
 
-| Member | Role |
-|--------|------|
-| **Lorraine Jade D. Barral** | Lead Developer |
-| **Cathleen Mae C. Cuevas** | UI/UX Designer |
-| **Mikyla Denise J. Dela Rosa** | Database Architect |
+| Member |
+|--------|
+| **Lorraine Jade D. Barral** |
+| **Cathleen Mae C. Cuevas** |
+| **Mikyla Denise J. Dela Rosa** |
 
 </div>
 
 ## 📄 License
 
-© 2025 InspiraDesk Team. All rights reserved.
+© 2025 InspiraDesk Team. Power Puffs. All rights reserved.
 
 ---
 
 <div align="center">
-
-### 💭 InspiraDesk: Where Inspiration Meets Organization
-
-[Report Bug](https://github.com/your-repo/issues) • [Request Feature](https://github.com/your-repo/issues) • [Documentation](#)
-
 </div>
