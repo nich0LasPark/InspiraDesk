@@ -8,8 +8,6 @@
 
 > *Find your daily inspiration with InspiraDesk - Your Personal Quote Management System*
 
-[Features](#-features) • [Installation](#-installation) • [Usage](#-usage) • [Technical Details](#-technical-details) • [Team](#-team)
-
 </div>
 ## 📋 Overview
 
@@ -72,12 +70,12 @@ InspiraDesk is a powerful Windows desktop application designed to help you colle
 
 ### Managing Quotes
 
-| Action | Description | Shortcut |
-|--------|-------------|----------|
-| Add Quote | Enter quote details and click "Add" | Ctrl+N |
-| Edit Quote | Select quote and modify details | Ctrl+E |
-| Delete Quote | Select quote and click "Delete" | Del |
-| Reset Fields | Click "Clear" to reset input fields | Ctrl+R |
+| Action | Description |
+|--------|-------------|
+| Add Quote | Enter quote details and click "Add" |
+| Edit Quote | Select quote and modify details |
+| Delete Quote | Select quote and click "Delete" |
+| Reset Fields | Click "Clear" to reset input fields |
 
 ## 🛠️ Technical Details
 
@@ -113,9 +111,9 @@ CREATE TABLE Quotes (
 
 ## 👥 Team
 
-<div align="center">
+<div>
 
-| Member |
+| Power Puffs |
 |--------|
 | **Lorraine Jade D. Barral** |
 | **Cathleen Mae C. Cuevas** |
@@ -129,5 +127,5 @@ CREATE TABLE Quotes (
 
 ---
 
-<div align="center">
+<div>
 </div>
