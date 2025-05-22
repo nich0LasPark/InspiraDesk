@@ -7,6 +7,7 @@
 [![SQLite](https://img.shields.io/badge/Database-SQLite-003B57?logo=sqlite)](https://www.sqlite.org/)
 
 > *Find your daily inspiration with InspiraDesk - Your Personal Quote Management System*
+</div>
 
 ## 📋 Overview
 
