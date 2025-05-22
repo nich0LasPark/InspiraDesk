@@ -8,7 +8,6 @@
 
 > *Find your daily inspiration with InspiraDesk - Your Personal Quote Management System*
 
-</div>
 ## 📋 Overview
 
 InspiraDesk is a powerful Windows desktop application designed to help you collect, organize, and manage your favorite inspirational quotes. With its intuitive interface and secure multi-user system, keeping track of your personal collection of wisdom has never been easier.
@@ -55,7 +54,7 @@ InspiraDesk is a powerful Windows desktop application designed to help you colle
 
 ## 🚀 Installation
 
-1. Download the latest release from our [releases page](#)
+1. Download the latest release from our repository.
 2. Extract the InspiraDesk files to your preferred location
 3. Double-click `InspiraDeskManager.exe` to launch the application
 
